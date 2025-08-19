@@ -1,17 +1,38 @@
-# Enable Zoom App Real Time Media Streams: Media-accessing apps
+# Multi-Feature Zoom App Codelab
 
-This repository hosts a web-based Google Codelab that walks developers through enabling Real Time Media Streams (RTMS) for Zoom Apps. The tutorial covers app prerequisites, updating Marketplace metadata with the Manifest API, enabling RTMS at install time, and configuring account settings to auto-open an RTMS-enabled app.
+This codelab walks you through building a Zoom App that unifies **Team Chat**, **Chatbot**, and **Meeting** capabilities through a single manifest.
 
 ## Prerequisites
-- Code editor and terminal
-- Zoom Developer Account with RTMS enabled
+- Zoom Developer Account
+- Zoom desktop client
+- Node.js 18+
+- Git
+- Zoom App credentials (Client ID and Secret)
+- Optional: tunneling tool such as ngrok for local development
 
-## Usage
-Open `index.html` in a web browser. Each step explains how RTMS works and includes a sample Manifest JSON object showing required scopes, event subscriptions, and app options.
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/zoom/enable-rtms-zoomapp-sdk.git
+   cd enable-rtms-zoomapp-sdk
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the codelab:
+   ```bash
+   npm start
+   ```
 
-## Resources
-- [Real-Time Media Streams (RTMS) docs](https://developers.zoom.us/docs/rtms/)
-- [Embedded Zoom Web Meeting SDK](https://developers.zoom.us/docs/meeting-sdk/web/)
+## Codelab Parts
+- [Part 1: Team Chat](./part1/README.md)
+- [Part 2: Chatbot](./part2/README.md)
+- [Part 3: Meetings](./part3/README.md)
 
-## License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+## References
+- [Zoom Developer Documentation](https://developers.zoom.us/)
+- [Zoom Apps Overview](https://developers.zoom.us/docs/zoom-apps/)
+- [Zoom Team Chat API](https://developers.zoom.us/docs/team-chat/)
+- [Zoom Chatbot API](https://developers.zoom.us/docs/chatbots/)
+- [Zoom Meeting SDK](https://developers.zoom.us/docs/meeting-sdk/)
